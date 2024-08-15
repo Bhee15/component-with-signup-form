@@ -22,3 +22,80 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+h2{
+    font-family: var(--ff-poppins);
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+.text-1{
+    font-family: var(--ff-poppins);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn-1{
+    min-height: 3rem;
+    background-color: var(--blue);
+    border: none;
+    font-family: var(--ff-poppins);
+    font-weight: 600;
+}
+
+.btn-2{
+    background-color: var(--green);
+    font-weight: 500;
+    font-family: var(--ff-poppins);
+}
+
+.text-2{
+    font-family: var(--ff-poppins);
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+
+form{
+    font-family: var(--ff-poppins);
+}
+form input[type='text']{
+    min-height:3rem;
+}
+form input[type=email]{
+    min-height: 3rem;
+}
+form input[type='password']{
+    min-height: 3rem;
+}
+
+@media(max-width:428px){
+
+    body{
+        background-image: url(assets/bg-intro-mobile.png);
+    }
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .text-1{
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .btn-1{
+        min-width: 100%;
+        min-height: 5rem;
+        font-weight: 600;
+        padding: 0 3rem;
+    }
+    .text-2{
+    font-size: 12px;
+
+    }
+    .btn-2{
+        min-height: 3rem;
+    }
