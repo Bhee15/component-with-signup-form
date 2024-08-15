@@ -31,7 +31,7 @@ h2{
 .text-1{
     font-family: var(--ff-poppins);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .btn-1{
@@ -40,6 +40,10 @@ h2{
     border: none;
     font-family: var(--ff-poppins);
     font-weight: 600;
+}
+button{
+    cursor: pointer;
+    
 }
 
 .btn-2{
@@ -50,7 +54,7 @@ h2{
 
 .text-2{
     font-family: var(--ff-poppins);
-    font-size: 0.7rem;
+    font-size: 14px;
     font-weight: 400;
     color: var(--grayish-blue);
 }
@@ -76,24 +80,26 @@ form input[type='password']{
     }
     h2{
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding: 1rem;
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .text-1{
         text-align: center;
         font-weight: 400;
         font-size: 16px;
+        padding: 0 1rem;
     }
     .btn-1{
         min-width: 100%;
         min-height: 5rem;
         font-weight: 600;
-        padding: 0 3rem;
+        padding: 0 4rem;
     }
     .text-2{
     font-size: 12px;
+    padding: 0 1rem;
 
     }
     .btn-2{
