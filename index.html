@@ -17,7 +17,9 @@
       <!-- main section -->
       <section class="row justify-content-between m-3">
         <!-- section-1 -->
-        <section class="col-md-5 text-white d-lg-flex flex-column justify-content-center gap-2 w-lg-50 ms-lg-5 section-1 mt-4">
+        <section
+          class="col-md-5 text-white d-lg-flex flex-column justify-content-center gap-2 w-lg-50 ms-lg-5 section-1 mt-4"
+        >
           <h2 class="fw-bold">Learn to code by watching others</h2>
           <p class="text-1">
             See how experienced developers solve problems in real-time. Watching
@@ -26,69 +28,40 @@
           </p>
         </section>
         <!-- section-2 -->
-        <section class="col-md-6 d-flex flex-column section-2">
+        <section class="col-md-6 d-flex flex-column gap-4 section-2">
           <!-- div for btn-1 -->
           <div>
-            <button class="btn-1 mt-5 form-control btn btn-primary shadow-lg">
-              Try it free 7 days
-              <span class="fw-light">then $20/mo. thereafter</span>
+            <button class="btn-1 btn btn-primary w-100 fw-bold shadow">
+              Try it free 7 days <span class="fw-light">then $20/mo. thereafter</span>
             </button>
           </div>
-          <!-- section-3 -->
-          <section
-            class="container rounded d-flex flex-column mt-4 pt-2 pb-4 px-4 bg-light shadow-lg section-3"
-          >
-            <!-- form -->
-            <form class="form-floating">
+          <!-- form -->
+          <div class="container rounded bg-white d-flex flex-column gap-2 px-4 pt-4 pb-2 shadow">
+            <form class="needs-validation d-flex flex-column gap-3"novalidate>
               <div>
-                <label for="firstname"></label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="First Name" first name cannot be empty
-                />
+                <input type="text"class="form-control px-3 py-2"id="floatingInput validationDefault01"placeholder="First Name"required/>
+                <div class="invalid-feedback">First name cannot be empty</div>
               </div>
               <div>
-                <label for="lastname"></label>
-                <input
-                  type="text"
-                  id="floatingInput"
-                  class="form-control"
-                  placeholder="Last Name"
-                last name cannot be empty/>
+                <input type="text"id="floatingInput validationCustom02"class="form-control px-3 py-2"placeholder="Last Name"required/>
+                <div class="invalid-feedback">Last name cannot be empty</div>
               </div>
               <div>
-                <label for="emailaddress"></label>
-                <input
-                  type="email"
-                  id="floatingInput"
-                  class="form-control"
-                  placeholder="Email Address" email@example/com Looks like this is not an email/>
+                <input type="email"id="validationCustom03"class="form-control px-3 py-2"placeholder="Email Address"required/>
+                <div class="invalid-feedback">Looks like this is not a valid email</div>
               </div>
               <div>
-                <label for="password"></label>
-                <input
-                  type="password"
-                  id="floatingInput"
-                  class="form-control"
-                  placeholder="Password" Password cannot be empty
-                />
+                <input type="password"id="floatingInput validationCustom04"class="form-control px-3 py-2"placeholder="Password"required/>
+                <div class="invalid-feedback">password cannot be empty</div>
               </div>
-            </form>
-            <!-- div for btn-2 -->
-            <div>
-              <button
-                class="btn-2 form-control mt-4 btn btn-success"
-                type="submit" >
+              <button class="btn-2 btn btn-success shadow" type="submit">
                 CLAIM YOUR FREE TRIAL
               </button>
-            </div>
-            <p class="text-2 mt-3 text-center">
-              By clicking the button, you are agreeing to our
-              <span class="text-danger fw-bold">Terms and Services</span>
+            </form>
+            <p class="text-2 mt-2 text-center">
+              By clicking the button, you are agreeing to our <span class="text-danger fw-bold">Terms and Services</span>
             </p>
-          </section>
+          </div>
         </section>
       </section>
     </main>

@@ -37,40 +37,28 @@ h2{
 .btn-1{
     min-height: 3rem;
     background-color: var(--blue);
-    border: none;
     font-family: var(--ff-poppins);
-    font-weight: 600;
 }
 button{
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 .btn-2{
     background-color: var(--green);
-    font-weight: 500;
+    min-height: 3rem;
     font-family: var(--ff-poppins);
+    width: 100%;
 }
 
 .text-2{
     font-family: var(--ff-poppins);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: var(--grayish-blue);
 }
 
-
 form{
     font-family: var(--ff-poppins);
-}
-form input[type='text']{
-    min-height:3rem;
-}
-form input[type=email]{
-    min-height: 3rem;
-}
-form input[type='password']{
-    min-height: 3rem;
 }
 
 @media(max-width:428px){
@@ -91,17 +79,16 @@ form input[type='password']{
         font-size: 16px;
         padding: 0 1rem;
     }
+    
     .btn-1{
         min-width: 100%;
         min-height: 5rem;
         font-weight: 600;
+        margin-top: 3rem;
         padding: 0 4rem;
     }
     .text-2{
     font-size: 12px;
     padding: 0 1rem;
-
     }
-    .btn-2{
-        min-height: 3rem;
-    }
+   
