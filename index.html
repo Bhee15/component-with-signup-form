@@ -48,11 +48,11 @@
               </div>
               <div>
                 <input type="email"id="validationCustom03"class="form-control px-3 py-2"placeholder="Email Address"required/>
-                <div class="invalid-feedback">Looks like this is not a valid email</div>
+                <div class="invalid-feedback">Looks like this is not an email</div>
               </div>
               <div>
                 <input type="password"id="floatingInput validationCustom04"class="form-control px-3 py-2"placeholder="Password"required/>
-                <div class="invalid-feedback">password cannot be empty</div>
+                <div class="invalid-feedback">Password cannot be empty</div>
               </div>
               <button class="btn-2 btn btn-success shadow" type="submit">
                 CLAIM YOUR FREE TRIAL
@@ -71,5 +71,25 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+      
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+      
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+      
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()</script>
   </body>
 </html>
